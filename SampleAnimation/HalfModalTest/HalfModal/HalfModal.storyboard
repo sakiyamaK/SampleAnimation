@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hyO-s0-5Ph">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -22,38 +22,46 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Q2-5x-Goz" userLabel="SlideView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnM-8Z-jCr" userLabel="MainView">
-                                        <rect key="frame" x="0.0" y="596" width="414" height="300"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la5-z4-nQS">
-                                                <rect key="frame" x="184" y="135" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cE-8R-y0o">
-                                                <rect key="frame" x="184" y="135" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-xm-1MP">
-                                                <rect key="frame" x="0.0" y="266" width="414" height="34"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="FdQ-xm-1MP" secondAttribute="trailing" id="1ob-ak-bsf"/>
-                                            <constraint firstItem="FdQ-xm-1MP" firstAttribute="leading" secondItem="hnM-8Z-jCr" secondAttribute="leading" id="FxF-6Z-0iJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="FdQ-xm-1MP" secondAttribute="bottom" id="j7b-Mr-DeP"/>
-                                            <constraint firstAttribute="height" constant="300" id="uV3-1k-AXo"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-Xr-QtJ" userLabel="TopBarView">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-Xr-QtJ" userLabel="TopBarView">
                                         <rect key="frame" x="177" y="578" width="60" height="8"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="8" id="9Ig-0n-NZN"/>
                                             <constraint firstAttribute="width" constant="60" id="rP3-KS-Jvs"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnM-8Z-jCr" userLabel="MainView">
+                                        <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cE-8R-y0o">
+                                                <rect key="frame" x="161" y="218" width="92" height="30"/>
+                                                <state key="normal" title="縮めハーフ！"/>
+                                                <connections>
+                                                    <action selector="tapChijime:" destination="hyO-s0-5Ph" eventType="touchUpInside" id="YZr-xB-fzT"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-xm-1MP">
+                                                <rect key="frame" x="0.0" y="266" width="414" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la5-z4-nQS">
+                                                <rect key="frame" x="153" y="18" width="108" height="30"/>
+                                                <state key="normal" title="伸びろハーフ！"/>
+                                                <connections>
+                                                    <action selector="tapNobiro:" destination="hyO-s0-5Ph" eventType="touchUpInside" id="Wag-Wo-uQK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FdQ-xm-1MP" secondAttribute="trailing" id="1ob-ak-bsf"/>
+                                            <constraint firstItem="la5-z4-nQS" firstAttribute="centerX" secondItem="hnM-8Z-jCr" secondAttribute="centerX" id="4rT-lh-qkX"/>
+                                            <constraint firstItem="la5-z4-nQS" firstAttribute="top" secondItem="hnM-8Z-jCr" secondAttribute="top" constant="18" id="FWx-zu-eQ8"/>
+                                            <constraint firstItem="FdQ-xm-1MP" firstAttribute="leading" secondItem="hnM-8Z-jCr" secondAttribute="leading" id="FxF-6Z-0iJ"/>
+                                            <constraint firstItem="1cE-8R-y0o" firstAttribute="centerX" secondItem="hnM-8Z-jCr" secondAttribute="centerX" id="Kaa-xY-lYh"/>
+                                            <constraint firstAttribute="bottom" secondItem="FdQ-xm-1MP" secondAttribute="bottom" id="j7b-Mr-DeP"/>
+                                            <constraint firstItem="FdQ-xm-1MP" firstAttribute="top" secondItem="1cE-8R-y0o" secondAttribute="bottom" constant="18" id="jEw-vJ-v1a"/>
+                                            <constraint firstAttribute="height" constant="300" id="uV3-1k-AXo"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -82,12 +90,15 @@
                         <viewLayoutGuide key="safeArea" id="oEI-26-Qxu"/>
                     </view>
                     <connections>
+                        <outlet property="halfMainViewHeightConstraint" destination="uV3-1k-AXo" id="pyt-cA-5UH"/>
+                        <outlet property="slideView" destination="7Q2-5x-Goz" id="5mR-BS-e3u"/>
                         <outlet property="slideViewCenterXConstraint" destination="jJE-6p-HKE" id="cIY-9F-tIX"/>
+                        <outlet property="topBarView" destination="H1o-Xr-QtJ" id="JJH-52-brU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ka2-HE-T2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="-263"/>
+            <point key="canvasLocation" x="553.62318840579712" y="-263.16964285714283"/>
         </scene>
     </scenes>
 </document>

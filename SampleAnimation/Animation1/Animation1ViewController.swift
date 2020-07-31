@@ -85,7 +85,8 @@ extension Animation1ViewController {
     }
 
     @objc func tapAnimView4() {
-        isBGAnimed = !isBGAnimed
+//        isBGAnimed = !isBGAnimed
+        isBGAnimed.toggle()
         if isBGAnimed {
             self.blueDismissConst.isActive = false
             self.blueShowConst.isActive = true

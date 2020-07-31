@@ -16,6 +16,12 @@
 		B66973D62424A289002FDC89 /* SampleAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66973D52424A289002FDC89 /* SampleAnimationUITests.swift */; };
 		B66973E52424A3AD002FDC89 /* Animation1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66973E42424A3AD002FDC89 /* Animation1.storyboard */; };
 		B66973E72424A3B9002FDC89 /* Animation1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66973E62424A3B9002FDC89 /* Animation1ViewController.swift */; };
+		B6B3DDD524D474A900C504DC /* Animation2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B3DDD424D474A900C504DC /* Animation2.storyboard */; };
+		B6B3DDD724D474BF00C504DC /* Animation2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DDD624D474BF00C504DC /* Animation2ViewController.swift */; };
+		B6DFAE0B24D45D1500071D25 /* HalfModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DFAE0A24D45D1500071D25 /* HalfModal.storyboard */; };
+		B6DFAE0D24D45D2500071D25 /* HalfModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFAE0C24D45D2500071D25 /* HalfModalViewController.swift */; };
+		B6DFAE0F24D463D100071D25 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DFAE0E24D463D100071D25 /* Base.storyboard */; };
+		B6DFAE1324D4640800071D25 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFAE1224D4640800071D25 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		B66973D72424A289002FDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66973E42424A3AD002FDC89 /* Animation1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation1.storyboard; sourceTree = "<group>"; };
 		B66973E62424A3B9002FDC89 /* Animation1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation1ViewController.swift; sourceTree = "<group>"; };
+		B6B3DDD424D474A900C504DC /* Animation2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation2.storyboard; sourceTree = "<group>"; };
+		B6B3DDD624D474BF00C504DC /* Animation2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation2ViewController.swift; sourceTree = "<group>"; };
+		B6DFAE0A24D45D1500071D25 /* HalfModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HalfModal.storyboard; sourceTree = "<group>"; };
+		B6DFAE0C24D45D2500071D25 /* HalfModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalViewController.swift; sourceTree = "<group>"; };
+		B6DFAE0E24D463D100071D25 /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		B6DFAE1224D4640800071D25 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +114,14 @@
 			isa = PBXGroup;
 			children = (
 				B66973E32424A39D002FDC89 /* Animation1 */,
+				B6B3DDD324D4747B00C504DC /* Animation2 */,
 				B66973B32424A287002FDC89 /* AppDelegate.swift */,
-				B66973B72424A287002FDC89 /* ViewController.swift */,
-				B66973B92424A287002FDC89 /* Main.storyboard */,
 				B66973BC2424A289002FDC89 /* Assets.xcassets */,
-				B66973BE2424A289002FDC89 /* LaunchScreen.storyboard */,
+				B6DFAE0924D45CFB00071D25 /* HalfModalTest */,
 				B66973C12424A289002FDC89 /* Info.plist */,
+				B66973BE2424A289002FDC89 /* LaunchScreen.storyboard */,
+				B66973B92424A287002FDC89 /* Main.storyboard */,
+				B66973B72424A287002FDC89 /* ViewController.swift */,
 			);
 			path = SampleAnimation;
 			sourceTree = "<group>";
@@ -137,6 +151,42 @@
 				B66973E62424A3B9002FDC89 /* Animation1ViewController.swift */,
 			);
 			path = Animation1;
+			sourceTree = "<group>";
+		};
+		B6B3DDD324D4747B00C504DC /* Animation2 */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3DDD424D474A900C504DC /* Animation2.storyboard */,
+				B6B3DDD624D474BF00C504DC /* Animation2ViewController.swift */,
+			);
+			path = Animation2;
+			sourceTree = "<group>";
+		};
+		B6DFAE0924D45CFB00071D25 /* HalfModalTest */ = {
+			isa = PBXGroup;
+			children = (
+				B6DFAE1124D463EB00071D25 /* Base */,
+				B6DFAE1024D463DE00071D25 /* HalfModal */,
+			);
+			path = HalfModalTest;
+			sourceTree = "<group>";
+		};
+		B6DFAE1024D463DE00071D25 /* HalfModal */ = {
+			isa = PBXGroup;
+			children = (
+				B6DFAE0A24D45D1500071D25 /* HalfModal.storyboard */,
+				B6DFAE0C24D45D2500071D25 /* HalfModalViewController.swift */,
+			);
+			path = HalfModal;
+			sourceTree = "<group>";
+		};
+		B6DFAE1124D463EB00071D25 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B6DFAE0E24D463D100071D25 /* Base.storyboard */,
+				B6DFAE1224D4640800071D25 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DFAE0B24D45D1500071D25 /* HalfModal.storyboard in Resources */,
+				B6DFAE0F24D463D100071D25 /* Base.storyboard in Resources */,
 				B66973C02424A289002FDC89 /* LaunchScreen.storyboard in Resources */,
 				B66973E52424A3AD002FDC89 /* Animation1.storyboard in Resources */,
 				B66973BD2424A289002FDC89 /* Assets.xcassets in Resources */,
+				B6B3DDD524D474A900C504DC /* Animation2.storyboard in Resources */,
 				B66973BB2424A287002FDC89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,8 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B3DDD724D474BF00C504DC /* Animation2ViewController.swift in Sources */,
+				B6DFAE1324D4640800071D25 /* BaseViewController.swift in Sources */,
 				B66973B82424A287002FDC89 /* ViewController.swift in Sources */,
 				B66973E72424A3B9002FDC89 /* Animation1ViewController.swift in Sources */,
+				B6DFAE0D24D45D2500071D25 /* HalfModalViewController.swift in Sources */,
 				B66973B42424A287002FDC89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
