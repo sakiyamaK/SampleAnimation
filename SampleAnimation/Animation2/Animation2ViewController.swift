@@ -11,21 +11,21 @@ import UIKit
 
 class Animation2ViewController: UIViewController {
 
-  @IBOutlet weak var animView1: UIView! {
+  @IBOutlet private weak var animView1: UIView! {
     didSet {
       let g = UITapGestureRecognizer.init(target: self, action: #selector(tapAnimView1))
       animView1.addGestureRecognizer(g)
     }
   }
 
-  @IBOutlet weak var animView2: UIView! {
+  @IBOutlet private weak var animView2: UIView! {
     didSet {
       let g = UITapGestureRecognizer.init(target: self, action: #selector(tapAnimView2))
       animView2.addGestureRecognizer(g)
     }
   }
 
-  @IBOutlet weak var animView3: UIView! {
+  @IBOutlet private weak var animView3: UIView! {
     didSet {
       let g = UITapGestureRecognizer.init(target: self, action: #selector(tapAnimView3))
       animView3.addGestureRecognizer(g)
@@ -33,16 +33,16 @@ class Animation2ViewController: UIViewController {
   }
 
   private var isBGAnimed: Bool = false
-  @IBOutlet weak var animBGView: UIView! {
+  @IBOutlet private weak var animBGView: UIView! {
     didSet {
       let g = UITapGestureRecognizer.init(target: self, action: #selector(tapAnimView4))
       animBGView.addGestureRecognizer(g)
     }
   }
 
-  @IBOutlet weak var blueShowConst: NSLayoutConstraint!
-  @IBOutlet weak var greenShowConst: NSLayoutConstraint!
-  @IBOutlet weak var orangeShowConst: NSLayoutConstraint!
+  @IBOutlet private weak var bluePositionConst: NSLayoutConstraint!
+  @IBOutlet private weak var greenPositionConst: NSLayoutConstraint!
+  @IBOutlet private weak var orangePositionConst: NSLayoutConstraint!
 }
 
 extension Animation2ViewController {
@@ -81,29 +81,33 @@ extension Animation2ViewController {
     isBGAnimed.toggle()
     if isBGAnimed {
 
-      self.blueShowConst.constant = 0
-
+      //制約の値を変える
+      self.bluePositionConst.constant = 0
+      //0.5アニメーション
       UIView.animate(withDuration: 0.5, animations: {
-
+        //制約に基づいて更新する
         self.view.layoutIfNeeded()
+      }) {(_) in //アニメーションが終わったcompletion
 
-        self.greenShowConst.constant = 0
-
+        //制約の値を変える
+        self.greenPositionConst.constant = 0
         UIView.animate(withDuration: 0.5, delay: 0.1, animations: {
-
+          //制約に基づいて更新する
           self.view.layoutIfNeeded()
+        }) {(_) in //アニメーションが終わったcompletion
 
-          self.orangeShowConst.constant = 0
-
+          //制約に基づいて更新する
+          self.orangePositionConst.constant = 0
           UIView.animate(withDuration: 0.5, delay: 0.2, animations: {
+            //制約に基づいて更新する
             self.view.layoutIfNeeded()
           })
-        })
-      })
+        }
+      }
     } else {
-      self.blueShowConst.constant = 300
-      self.greenShowConst.constant = 300
-      self.orangeShowConst.constant = 300
+      self.bluePositionConst.constant = 300
+      self.greenPositionConst.constant = 300
+      self.orangePositionConst.constant = 300
 
       UIView.animate(withDuration: 0.5, animations: {
         self.view.layoutIfNeeded()

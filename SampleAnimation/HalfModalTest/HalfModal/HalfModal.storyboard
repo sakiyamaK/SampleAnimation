@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hyO-s0-5Ph">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,18 +12,18 @@
             <objects>
                 <viewController id="hyO-s0-5Ph" customClass="HalfModalViewController" customModule="SampleAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lnl-ej-5dl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-4H-Je4" userLabel="OutSideSafeAreaBottomView">
-                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Q2-5x-Goz" userLabel="SlideView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-Xr-QtJ" userLabel="TopBarView">
-                                        <rect key="frame" x="177" y="578" width="60" height="8"/>
+                                        <rect key="frame" x="157.66666666666666" y="494" width="60" height="8"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="8" id="9Ig-0n-NZN"/>
@@ -31,21 +31,21 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnM-8Z-jCr" userLabel="MainView">
-                                        <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                                        <rect key="frame" x="0.0" y="512" width="375" height="300"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-xm-1MP" userLabel="OutSideSafeAreabottomInSlideView">
+                                                <rect key="frame" x="0.0" y="266" width="375" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cE-8R-y0o">
-                                                <rect key="frame" x="161" y="218" width="92" height="30"/>
+                                                <rect key="frame" x="141.66666666666666" y="218" width="92" height="30"/>
                                                 <state key="normal" title="縮めハーフ！"/>
                                                 <connections>
                                                     <action selector="tapChijime:" destination="hyO-s0-5Ph" eventType="touchUpInside" id="YZr-xB-fzT"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-xm-1MP">
-                                                <rect key="frame" x="0.0" y="266" width="414" height="34"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la5-z4-nQS">
-                                                <rect key="frame" x="153" y="18" width="108" height="30"/>
+                                                <rect key="frame" x="133.66666666666666" y="18" width="108" height="30"/>
                                                 <state key="normal" title="伸びろハーフ！"/>
                                                 <connections>
                                                     <action selector="tapNobiro:" destination="hyO-s0-5Ph" eventType="touchUpInside" id="Wag-Wo-uQK"/>
@@ -75,9 +75,9 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.29647640306122447" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ec6-4H-Je4" firstAttribute="leading" secondItem="oEI-26-Qxu" secondAttribute="leading" id="23O-aD-ZvQ"/>
+                            <constraint firstItem="ec6-4H-Je4" firstAttribute="leading" secondItem="Lnl-ej-5dl" secondAttribute="leading" id="23O-aD-ZvQ"/>
                             <constraint firstItem="7Q2-5x-Goz" firstAttribute="centerX" secondItem="Lnl-ej-5dl" secondAttribute="centerX" id="5I8-6A-Cxq"/>
                             <constraint firstItem="7Q2-5x-Goz" firstAttribute="height" secondItem="Lnl-ej-5dl" secondAttribute="height" id="CDd-5l-L01"/>
                             <constraint firstAttribute="trailing" secondItem="ec6-4H-Je4" secondAttribute="trailing" id="Nig-jP-4WB"/>
@@ -92,7 +92,7 @@
                     <connections>
                         <outlet property="halfMainViewHeightConstraint" destination="uV3-1k-AXo" id="pyt-cA-5UH"/>
                         <outlet property="slideView" destination="7Q2-5x-Goz" id="5mR-BS-e3u"/>
-                        <outlet property="slideViewCenterXConstraint" destination="jJE-6p-HKE" id="cIY-9F-tIX"/>
+                        <outlet property="slideViewCenterYConstraint" destination="jJE-6p-HKE" id="cIY-9F-tIX"/>
                         <outlet property="topBarView" destination="H1o-Xr-QtJ" id="JJH-52-brU"/>
                     </connections>
                 </viewController>

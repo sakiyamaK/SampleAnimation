@@ -10,7 +10,7 @@ import UIKit
 
 final class HalfModalViewController: UIViewController {
 
-  @IBOutlet private weak var slideViewCenterXConstraint: NSLayoutConstraint!
+  @IBOutlet private weak var slideViewCenterYConstraint: NSLayoutConstraint!
 
   //オマケ 一応見栄え良く角丸にしてるだけ
   @IBOutlet private weak var topBarView: UIView! {
@@ -37,7 +37,7 @@ final class HalfModalViewController: UIViewController {
 
   func dismissModal(isAnimation: Bool = true) {
     //制約のconstantをviewの高さ分にして画面外に移動させる
-    slideViewCenterXConstraint.constant = self.view.frame.height
+    slideViewCenterYConstraint.constant = self.view.frame.height/2
 
     if isAnimation {
       //制約をアニメーションさせながら更新
@@ -56,7 +56,7 @@ final class HalfModalViewController: UIViewController {
   //モーダルを出現させる
   func showModal(isAnimation: Bool = true) {
     //制約のconstantを0にして画面中央に移動させる
-    slideViewCenterXConstraint.constant = 0
+    slideViewCenterYConstraint.constant = 0
     if isAnimation {
       //制約をアニメーションさせながら更新
       UIView.animate(withDuration: 0.2) {
@@ -86,7 +86,7 @@ private extension HalfModalViewController {
 private extension HalfModalViewController{
   func setDefaultPosition() {
     /*制約のconstantをデフォルトにする*/
-    slideViewCenterXConstraint.constant = self.view.frame.height
+    slideViewCenterYConstraint.constant = self.view.frame.height/2
     halfMainViewHeightConstraint.constant = 300
     self.view.layoutIfNeeded()
   }
