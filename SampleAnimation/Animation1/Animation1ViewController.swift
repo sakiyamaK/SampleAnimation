@@ -72,7 +72,7 @@ extension Animation1ViewController {
 
   @objc func tapAnimView2() {
     let angle = isRotated ? 0.0 : CGFloat(45.0 / 180 * Double.pi)
-    isRotated = !isRotated
+    isRotated.toggle()
     //0.1sec アニメーション
     UIView.animate(withDuration: 0.1, animations: {
       self.animView2.transform = CGAffineTransform.init(rotationAngle: angle)
@@ -90,7 +90,6 @@ extension Animation1ViewController {
   }
 
   @objc func tapAnimView4() {
-    //isBGAnimed = !isBGAnimed
     isBGAnimed.toggle()
     if isBGAnimed {
       //制約のactiveを切り替える
