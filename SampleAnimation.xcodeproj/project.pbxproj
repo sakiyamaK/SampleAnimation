@@ -16,6 +16,7 @@
 		B66973D62424A289002FDC89 /* SampleAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66973D52424A289002FDC89 /* SampleAnimationUITests.swift */; };
 		B66973E52424A3AD002FDC89 /* Animation1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66973E42424A3AD002FDC89 /* Animation1.storyboard */; };
 		B66973E72424A3B9002FDC89 /* Animation1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66973E62424A3B9002FDC89 /* Animation1ViewController.swift */; };
+		B6719E69263E801D00DACE37 /* Animation3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6719E68263E801D00DACE37 /* Animation3.storyboard */; };
 		B6B3DDD524D474A900C504DC /* Animation2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B3DDD424D474A900C504DC /* Animation2.storyboard */; };
 		B6B3DDD724D474BF00C504DC /* Animation2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DDD624D474BF00C504DC /* Animation2ViewController.swift */; };
 		B6DFAE0B24D45D1500071D25 /* HalfModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DFAE0A24D45D1500071D25 /* HalfModal.storyboard */; };
@@ -57,6 +58,7 @@
 		B66973D72424A289002FDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66973E42424A3AD002FDC89 /* Animation1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation1.storyboard; sourceTree = "<group>"; };
 		B66973E62424A3B9002FDC89 /* Animation1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation1ViewController.swift; sourceTree = "<group>"; };
+		B6719E68263E801D00DACE37 /* Animation3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation3.storyboard; sourceTree = "<group>"; };
 		B6B3DDD424D474A900C504DC /* Animation2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation2.storyboard; sourceTree = "<group>"; };
 		B6B3DDD624D474BF00C504DC /* Animation2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation2ViewController.swift; sourceTree = "<group>"; };
 		B6DFAE0A24D45D1500071D25 /* HalfModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HalfModal.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				B66973E32424A39D002FDC89 /* Animation1 */,
 				B6B3DDD324D4747B00C504DC /* Animation2 */,
+				B6719E66263E7FED00DACE37 /* Animation3 */,
 				B66973B32424A287002FDC89 /* AppDelegate.swift */,
 				B66973BC2424A289002FDC89 /* Assets.xcassets */,
 				B6DFAE0924D45CFB00071D25 /* HalfModalTest */,
@@ -151,6 +154,14 @@
 				B66973E62424A3B9002FDC89 /* Animation1ViewController.swift */,
 			);
 			path = Animation1;
+			sourceTree = "<group>";
+		};
+		B6719E66263E7FED00DACE37 /* Animation3 */ = {
+			isa = PBXGroup;
+			children = (
+				B6719E68263E801D00DACE37 /* Animation3.storyboard */,
+			);
+			path = Animation3;
 			sourceTree = "<group>";
 		};
 		B6B3DDD324D4747B00C504DC /* Animation2 */ = {
@@ -300,6 +311,7 @@
 				B66973BD2424A289002FDC89 /* Assets.xcassets in Resources */,
 				B6B3DDD524D474A900C504DC /* Animation2.storyboard in Resources */,
 				B66973BB2424A287002FDC89 /* Main.storyboard in Resources */,
+				B6719E69263E801D00DACE37 /* Animation3.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
