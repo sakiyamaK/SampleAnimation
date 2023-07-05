@@ -9,19 +9,18 @@
 import UIKit
 
 final class BaseViewController: UIViewController {
-
-  @IBAction func showHalfModal(_ sender: Any) {
-    guard let halfMoldaVC = UIStoryboard.init(name: "HalfModal", bundle: nil).instantiateInitialViewController() as? HalfModalViewController else {
-      return
+    @IBAction func showHalfModal(_: Any) {
+        guard let halfMoldaVC = UIStoryboard(name: "HalfModal", bundle: nil).instantiateInitialViewController() as? HalfModalViewController else {
+            return
+        }
+        // viewControllerを透過させる
+        halfMoldaVC.modalPresentationStyle = .overCurrentContext
+        // じんわり出てくるアニメーション
+        halfMoldaVC.modalTransitionStyle = .crossDissolve
+        // viewController自体をアニメーションなしで出現させて
+        // viewControllerが出終わったらshowModalを実行する
+        present(halfMoldaVC, animated: false, completion: {
+            halfMoldaVC.showModal(isAnimation: true)
+        })
     }
-    //viewControllerを透過させる
-    halfMoldaVC.modalPresentationStyle = .overCurrentContext
-    //じんわり出てくるアニメーション
-    halfMoldaVC.modalTransitionStyle = .crossDissolve
-    //viewController自体をアニメーションなしで出現させて
-    //viewControllerが出終わったらshowModalを実行する
-    self.present(halfMoldaVC, animated: false, completion: {
-      halfMoldaVC.showModal(isAnimation: true)
-    })
-  }
 }
